@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de desenvolvedor focado em Python, Django e aplicações web. Projetos reais, sistemas completos e soluções práticas.">
+    <meta name="author" content="Romário Durck">
+    <meta name="keywords" content="Python, Django, Desenvolvedor, Portfólio, Web, Backend, Programação">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romário Durck | Desenvolvedor Python & Web</title>
+
+
+    <!-- CSS -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+
+    <link rel="icon" type="image/png" href="assets/img/icons/developer.png">
+
+    <!-- Ícones das Skills (Devicon) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= MENU FIXO ================= -->
+<header class="menu">
+    <div class="menu-container">
+        <div class="menu-logo">ROMÁRIO</div>
+
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <nav class="menu-links">
+            <a href="#intro">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#skills">Skills</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </div>
+</header>
+
+<!-- ================= INTRO ================= -->
+<section id="intro">
+    <div class="intro-container">
+
+        <div class="intro-texto">
+            <h1 class="intro-titulo">
+                <span>R</span><span>O</span><span>M</span><span>Á</span><span>R</span><span>I</span><span>O</span>
+            </h1>
+
+            <h2 class="intro-subtitulo">Desenvolvedor de Sistemas</h2>
+
+            <p class="intro-frase">
+                Transformando lógica em soluções digitais reais.
+            </p>
+
+            <button class="intro-botao" onclick="scrollToSobre()">Enter the System</button>
+        </div>
+
+        <div class="foto-wrapper">
+            <img src="assets/img/foto-perfil.png" alt="Setup de desenvolvimento" class="intro-foto">
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= SOBRE MIM ================= -->
+<section id="sobre" class="sobre">
+    <div class="sobre-container">
+
+        <div class="sobre-foto-area">
+            <img src="assets/img/profile/foto-profile.jpeg" alt="Foto de Romário" class="sobre-foto">
+        </div>
+
+        <div class="sobre-texto">
+            <h2 class="sobre-titulo">Sobre Mim</h2>
+
+            <p>
+                Sou desenvolvedor focado em transformar lógica em soluções digitais reais. Minha base vem da formação em Análise e Desenvolvimento de Sistemas, mas foi na prática — construindo projetos, resolvendo problemas e estudando além da sala de aula — que minha evolução realmente acelerou.
+            </p>
+
+            <p>
+                Tenho experiência com desenvolvimento web, organização de sistemas, banco de dados e construção de aplicações completas, sempre buscando escrever código limpo, funcional e fácil de manter.
+            </p>
+
+            <p>
+                A tecnologia evolui o tempo todo, e é exatamente isso que me motiva. Estou sempre aprendendo, testando novas abordagens e aprimorando minhas habilidades para crescer de forma sólida como desenvolvedor.
+            </p>
+</div>
+
+
+    </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="skills">
+    <h2 class="skills-titulo">Habilidades Técnicas</h2>
+
+    <!-- Linguagens -->
+    <div class="skills-categoria">
+        <h3>Linguagens</h3>
+        <div class="skills-grid">
+            <div class="skill-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+            <div class="skill-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+            <div class="skill-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+            <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+            <div class="skill-item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+        </div>
+    </div>
+
+    <!-- Bibliotecas -->
+    <div class="skills-categoria">
+        <h3>Bibliotecas & Frameworks</h3>
+        <div class="skills-grid">
+            <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Pandas</span></div>
+            <div class="skill-item"><i class="devicon-matplotlib-plain"></i><span>Matplotlib</span></div>
+            <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Pygame</span></div>
+            <div class="skill-item"><i class="devicon-qt-original colored"></i><span>PyQt</span></div>
+            <div class="skill-item"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+        </div>
+    </div>
+
+    <!-- Banco de Dados -->
+    <div class="skills-categoria">
+        <h3>Bancos de Dados</h3>
+        <div class="skills-grid">
+            <div class="skill-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+            <div class="skill-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+            <div class="skill-item"><i class="devicon-sqlite-plain colored"></i><span>SQLite</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PROJETOS ================= -->
+<section class="projetos" id="projetos">
+    <h2 class="titulo-secao">Projetos</h2>
+
+    <div class="projetos-grid">
+
+        <!-- Transcrição de Áudio -->
+        <div class="projeto-card">
+            <h3>Transcrição de Áudio com Python</h3>
+            <p>Sistema para transcrição automática de áudios usando a API de reconhecimento de voz do Google.</p>
+            <div class="projeto-tech">
+                <span>Python</span>
+                <span>Speech Recognition</span>
+                <span>API Google</span>
+                <span>Automação</span>
+            </div>
+            <div class="projeto-links">
+                <button class="btn-print" data-img="assets/img/projects/transcrever.png">
+                    Ver Print
+                </button>
+                <a href="https://github.com/Megadurck/Transcricao-Audio-Python" target="_blank" class="btn-projeto">
+                    Repositório
+                </a>
+            </div>
+        </div>
+
+        <!-- Jogo Espaçonave -->
+        <div class="projeto-card">
+            <h3>Jogo de Espaçonave (Pygame)</h3>
+            <p>Jogo 2D feito com Pygame focado em lógica de programação e estrutura de jogo.</p>
+            <div class="projeto-tech">
+                <span>Python</span>
+                <span>Pygame</span>
+                <span>Lógica de Programação</span>
+                <span>Game Dev</span>
+            </div>
+
+            <div class="projeto-links">
+                <button class="btn-print" data-img="assets/img/projects/jogo-espaconave.png">
+                    Ver Print
+                </button>
+                <a href="https://github.com/Megadurck/jogo-espaconave-pygame" target="_blank" class="btn-projeto">
+                    Repositório
+                </a>
+            </div>
+        </div>
+
+        <div class="projeto-card">
+
+            <h3>Recibo Generator</h3>
+
+            <p>
+                Sistema desktop para geração automática de recibos a partir de parâmetros informados,
+                eliminando a necessidade de editar arquivos manualmente no Word.
+            </p>
+
+            <div class="projeto-tech">
+                <span>Python</span>
+                <span>PyQt</span>
+                <span>Automação de Documentos</span>
+                <span>Interface Gráfica</span>
+            </div>
+
+            <div class="projeto-links">
+                <button class="btn-print" data-img="assets/img/projects/recibo-generation.png">
+                    Ver Print
+                </button>
+                <a href="https://github.com/Megadurck/pyqt-receipt-generator" target="_blank" class="btn-projeto">
+                    Repositório
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- Escola de Arte -->
+        <div class="projeto-card">
+            <h3>Escola_Arte (Django)</h3>
+
+            <p>
+                Sistema web de inscrições para uma escola de artes, com área administrativa,
+                gerenciamento de cadastros e envio de formulários integrados ao backend.
+            </p>
+
+            <div class="projeto-tech">
+                <span>Django</span>
+                <span>Bootstrap</span>
+                <span>JavaScript</span>
+                <span>PostgreSQL</span>
+                <span>Deploy na Nuvem</span>
+            </div>
+
+            <p class="projeto-extra">
+                Aplicação fullstack em produção, utilizando banco de dados PostgreSQL hospedado na nuvem.
+            </p>
+
+            <div class="projeto-links">
+                <button class="btn-print" data-img="assets/img/projects/escola-arte.png">
+                    Ver Print
+                </button>
+                <a href="https://github.com/Megadurck/escola_arte" target="_blank" class="btn-projeto">
+                    Repositório
+                </a>
+    </div>
+</div>
+
+
+        <!-- Controle Financeiro -->
+        <div class="projeto-card">
+            <h3>Controle Financeiro Desktop</h3>
+            <p>Aplicação para controle de ganhos e gastos com gráficos e persistência em arquivo JSON.</p>
+            <div class="projeto-tech">
+                <span>Python</span>
+                <span>PyQt</span>
+                <span>CRUD</span>
+                <span>JSON Storage</span>
+                <span>Gráficos</span>
+            </div>
+
+            <div class="projeto-links">
+                <button class="btn-print" data-img="assets/img/projects/controle-financeiro.png">
+                    Ver Print
+                </button>
+                <a href="https://github.com/Megadurck/controle-financeiro" target="_blank" class="btn-projeto">
+                    Repositório
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= CONTATO ================= -->
+<section id="contato" class="contato">
+    <h2 class="contato-titulo">Contato</h2>
+
+    <p class="contato-texto">
+        Curtiu meu trabalho ou quer trocar uma ideia sobre tecnologia?  
+        Fica à vontade para entrar em contato.
+    </p>
+
+    <div class="contato-links">
+        <p class="contato-email">
+            Email: <a href="mailto:romariodurck@gmail.com">romariodurck@gmail.com</a>
+        </p>
+
+        <a href="https://www.linkedin.com/in/romario-rezende/" target="_blank" class="contato-item">
+            💼 LinkedIn
+        </a>
+    </div>
+</section>
+
+
+<!-- ================= RODAPÉ ================= -->
+<footer id="rodape">
+    <!-- Rodapé -->
+</footer>
+<div id="modal-print" class="modal-print">
+    <span class="fechar-modal">&times;</span>
+    <img class="modal-conteudo" id="img-modal">
+</div>
+
+<!-- JS -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/theme-toggle.js"></script>
+<script src="assets/js/intro-animation.js"></script>
+<script src="assets/js/projects.js"></script>
+
+</body>
+</html>

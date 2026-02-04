@@ -1,0 +1,14 @@
+:root {
+    /* Cores principais */
+    --cor-fundo: #202020;
+    --cor-fundo-secundario: #141414;
+    --cor-texto-principal: #f5f5f5;
+    --cor-texto-secundario: #b3b3b3;
+
+    /* Cor de destaque (rock/tech vibe) */
+    --cor-destaque: #00ffd5;
+
+    /* Botão */
+    --cor-botao-fundo: #00ffd5;
+    --cor-botao-texto: #000000;
+}
