@@ -8,7 +8,7 @@ O foco do projeto é um layout moderno, responsivo e com boa performance, destac
 
 ## 🚀 Preview
 
-🔗 **Acesse online:** *(coloque aqui o link do GitHub Pages depois)*
+🔗 **Acesse online:** *(https://megadurck.github.io/romario_portifolio/)*
 
 ---
 
