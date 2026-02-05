@@ -244,8 +244,20 @@ html, body {
     }
 
     .foto-wrapper {
-        max-width: 260px;
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 1 / 1;
+    position: relative;
+}
+
+@supports not (aspect-ratio: 1 / 1) {
+    .foto-wrapper::before {
+        content: "";
+        display: block;
+        padding-top: 100%;
     }
+}
+
 }
     
 body {
@@ -315,6 +327,24 @@ body::after {
     min-height: 100svh;
     min-height: 100dvh;
 }
+
+.intro-container,
+.intro-titulo,
+.intro-subtitulo,
+.intro-frase,
+.intro-botao {
+    will-change: transform, opacity;
+}
+
+#intro,
+.sobre,
+.skills,
+.projetos,
+.contato {
+    display: flex;
+    flex-direction: column;
+}
+
 /* ===== SEÇÃO SOBRE MIM ===== */
 .sobre {
     display: flex;
