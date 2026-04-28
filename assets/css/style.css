@@ -12,6 +12,11 @@ html, body {
     overflow-x: hidden;
 }
 
+/* ===== INTRO: ESPAÇO PARA O MENU FIXO ===== */
+#intro {
+    padding-top: 70px;
+}
+
 /* ===== INTRO OCUPA A TELA INTEIRA ===== */
 #intro {
     height: 100vh;
@@ -171,13 +176,17 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0    ;
+    right: 0;
     width: 100%;
     padding: 18px 40px;
     z-index: 1000;
 
-    background: rgba(0, 0, 0, 0.25); /* leve vidro */
-    background: transparent; /* deixa aparecer o fundo global */
+    background: rgba(10, 15, 31, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 255, 213, 0.1);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    transition: background 0.3s ease;
 }
 
 /* Container interno do menu */
@@ -218,6 +227,10 @@ html, body {
     font-size: 1.8rem;
     color: var(--cor-destaque);
     cursor: pointer;
+    line-height: 1;
+    z-index: 1001;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* ===== RESPONSIVIDADE ===== */
@@ -234,6 +247,52 @@ html, body {
     }
 }
 
+/* ===== MENU MOBILE ===== */
+@media (max-width: 768px) {
+    .menu {
+        padding: 14px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(10, 15, 31, 0.97);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(0, 255, 213, 0.15);
+        padding: 10px 0;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    .menu-links.aberto {
+        display: flex;
+    }
+
+    .menu-links a {
+        margin-left: 0;
+        padding: 14px 24px;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+        font-size: 1rem;
+    }
+
+    .menu-links a:last-child {
+        border-bottom: none;
+    }
+
+    #intro {
+        padding-top: 70px;
+    }
+}
+
 @media (max-width: 600px) {
     .intro-titulo {
         font-size: 2.5rem;
@@ -242,12 +301,6 @@ html, body {
     .intro-subtitulo {
         font-size: 1.2rem;
     }
-
-    .foto-wrapper {
-    width: 100%;
-    max-width: 420px;
-    aspect-ratio: 1 / 1;
-    position: relative;
 }
 
 @supports not (aspect-ratio: 1 / 1) {
@@ -256,8 +309,6 @@ html, body {
         display: block;
         padding-top: 100%;
     }
-}
-
 }
     
 body {
@@ -421,8 +472,14 @@ body::after {
     min-height: 100svh;
     min-height: 100dvh;
 
-    padding: 80px 10%;
+    padding: 80px 20px;
     text-align: center;
+}
+
+.skills-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .skills-titulo {
@@ -782,7 +839,7 @@ body::after {
 @media (max-width: 900px) {
     .skills {
         height: auto;
-        padding: 100px 6%;
+        padding: 100px 6% 60px;
     }
 
     .skills-grid {
