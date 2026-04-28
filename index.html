@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de desenvolvedor focado em Python, Django e aplicações web. Projetos reais, sistemas completos e soluções práticas.">
+    <meta name="description" content="Portfólio de Romário Durck com projetos reais em Python, FastAPI, Django, PyQt e automações, destacando APIs REST, sistemas web e aplicações desktop.">
     <meta name="author" content="Romário Durck">
-    <meta name="keywords" content="Python, Django, Desenvolvedor, Portfólio, Web, Backend, Programação">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Python, FastAPI, Django, PyQt, SQLAlchemy, API REST, Backend, Portfólio, Desenvolvedor, Web, Desktop, Programação">
     <title>Romário Durck | Desenvolvedor Python & Web</title>
 
 
     <!-- CSS -->
-    <link rel="preload" href="style.css" as="style">
-    <link rel="stylesheet" href="style.css">
-
     <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animations.css">
@@ -21,6 +17,7 @@
     <link rel="icon" type="image/png" href="assets/img/icons/developer.png">
 
     <!-- Ícones das Skills (Devicon) -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
 </head>
@@ -34,7 +31,7 @@
 
         <div class="menu-toggle" id="menu-toggle">☰</div>
 
-        <nav class="menu-links">
+        <nav class="menu-links" id="menu-links">
             <a href="#intro">Início</a>
             <a href="#sobre">Sobre</a>
             <a href="#skills">Skills</a>
@@ -63,7 +60,7 @@
         </div>
 
         <div class="foto-wrapper">
-            <img src="assets/img/foto-perfil.png" alt="Setup de desenvolvimento" class="intro-foto">
+            <img src="assets/img/foto-perfil.png" alt="Setup de desenvolvimento" class="intro-foto" fetchpriority="high" decoding="async">
         </div>
 
     </div>
@@ -74,7 +71,7 @@
     <div class="sobre-container">
 
         <div class="sobre-foto-area">
-            <img src="assets/img/profile/foto-profile.jpeg" alt="Foto de Romário" class="sobre-foto">
+            <img src="assets/img/profile/foto-profile.jpeg" alt="Foto de Romário" class="sobre-foto" loading="lazy" decoding="async">
         </div>
 
         <div class="sobre-texto">
@@ -122,6 +119,9 @@
             <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Pygame</span></div>
             <div class="skill-item"><i class="devicon-qt-original colored"></i><span>PyQt</span></div>
             <div class="skill-item"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+            <div class="skill-item"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+            <div class="skill-item"><i class="devicon-sqlalchemy-plain colored"></i><span>SQLAlchemy</span></div>
+            <div class="skill-item"><i class="devicon-pytest-plain colored"></i><span>Pytest</span></div>
         </div>
     </div>
 
@@ -140,10 +140,19 @@
 <section class="projetos" id="projetos">
     <h2 class="titulo-secao">Projetos</h2>
 
+    <div class="projetos-filtros" aria-label="Filtrar projetos por stack">
+        <button class="filtro-btn ativo" type="button" data-filter="all">Todos</button>
+        <button class="filtro-btn" type="button" data-filter="python">Python</button>
+        <button class="filtro-btn" type="button" data-filter="django">Django</button>
+        <button class="filtro-btn" type="button" data-filter="fastapi">FastAPI</button>
+        <button class="filtro-btn" type="button" data-filter="desktop">Desktop</button>
+    </div>
+
     <div class="projetos-grid">
 
         <!-- Transcrição de Áudio -->
-        <div class="projeto-card">
+        <div class="projeto-card" data-categories="python automacao">
+            <span class="projeto-tipo">Automacao</span>
             <h3>Transcrição de Áudio com Python</h3>
             <p>Sistema para transcrição automática de áudios usando a API de reconhecimento de voz do Google.</p>
             <div class="projeto-tech">
@@ -163,7 +172,8 @@
         </div>
 
         <!-- Jogo Espaçonave -->
-        <div class="projeto-card">
+        <div class="projeto-card" data-categories="python game">
+            <span class="projeto-tipo">Game Dev</span>
             <h3>Jogo de Espaçonave (Pygame)</h3>
             <p>Jogo 2D feito com Pygame focado em lógica de programação e estrutura de jogo.</p>
             <div class="projeto-tech">
@@ -183,7 +193,9 @@
             </div>
         </div>
 
-        <div class="projeto-card">
+        <div class="projeto-card" data-categories="python desktop">
+
+            <span class="projeto-tipo">Desktop</span>
 
             <h3>Recibo Generator</h3>
 
@@ -212,7 +224,8 @@
 
 
         <!-- Escola de Arte -->
-        <div class="projeto-card">
+        <div class="projeto-card" data-categories="python django web">
+            <span class="projeto-tipo">Fullstack Web</span>
             <h3>Escola_Arte (Django)</h3>
 
             <p>
@@ -244,7 +257,8 @@
 
 
         <!-- Controle Financeiro -->
-        <div class="projeto-card">
+        <div class="projeto-card" data-categories="python desktop">
+            <span class="projeto-tipo">Desktop</span>
             <h3>Controle Financeiro Desktop</h3>
             <p>Aplicação para controle de ganhos e gastos com gráficos e persistência em arquivo JSON.</p>
             <div class="projeto-tech">
@@ -260,6 +274,29 @@
                     Ver Print
                 </button>
                 <a href="https://github.com/Megadurck/controle-financeiro" target="_blank" class="btn-projeto">
+                    Repositório
+                </a>
+            </div>
+        </div>
+
+        <div class="projeto-card projeto-destaque" data-categories="python fastapi api">
+            <span class="projeto-tipo">Backend API</span>
+            <span class="destaque-badge">Projeto Mais Recente</span>
+            <h3>Smart Schedule API</h3>
+            <p>API REST para gestão de agendamentos com autenticação, controle de horários e organização por empresa.</p>
+            <div class="projeto-tech">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>SQLAlchemy</span>
+                <span>SQLite</span>
+                <span>JWT</span>
+            </div>
+
+            <div class="projeto-links">
+                <button class="btn-print" data-img="assets/img/projects/smart-schedule.png">
+                    Ver Print
+                </button>
+                <a href="https://github.com/Megadurck/smart-schedule-api" target="_blank" class="btn-projeto">
                     Repositório
                 </a>
             </div>
@@ -295,14 +332,14 @@
 </footer>
 <div id="modal-print" class="modal-print">
     <span class="fechar-modal">&times;</span>
-    <img class="modal-conteudo" id="img-modal">
+    <img class="modal-conteudo" id="img-modal" alt="Preview do projeto">
 </div>
 
 <!-- JS -->
-<script src="assets/js/main.js"></script>
-<script src="assets/js/theme-toggle.js"></script>
-<script src="assets/js/intro-animation.js"></script>
-<script src="assets/js/projects.js"></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/theme-toggle.js" defer></script>
+<script src="assets/js/intro-animation.js" defer></script>
+<script src="assets/js/projects.js" defer></script>
 
 </body>
 </html>
