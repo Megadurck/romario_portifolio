@@ -902,6 +902,42 @@ body::after {
     }
 }
 
+/* ===== TELAS COM POUCA ALTURA (ex: 1024x600, landscape) ===== */
+@media (max-height: 700px) {
+    .skills {
+        min-height: unset !important;
+        height: auto !important;
+        padding: 80px 5% 40px;
+    }
+
+    .skills-titulo {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .skills-categoria {
+        margin-bottom: 24px;
+    }
+
+    .skills-grid {
+        gap: 12px;
+    }
+
+    .skill-item {
+        padding: 10px 8px;
+        width: 80px;
+    }
+
+    .skill-item i {
+        font-size: 32px;
+        margin-bottom: 4px;
+    }
+
+    .skill-item span {
+        font-size: 11px;
+    }
+}
+
 /* ===== RESPONSIVIDADE PROJETOS ===== */
 @media (max-width: 900px) {
     .projetos {
