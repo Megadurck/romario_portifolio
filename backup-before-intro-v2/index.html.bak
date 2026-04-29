@@ -54,22 +54,17 @@
     <div class="intro-container">
 
         <div class="intro-texto">
-            <p class="intro-label">Romario Durck | Backend Developer</p>
+            <h1 class="intro-titulo">
+                <span>R</span><span>O</span><span>M</span><span>Á</span><span>R</span><span>I</span><span>O</span>
+            </h1>
 
-            <h1 class="intro-titulo">Construo APIs robustas e sistemas backend prontos para produção.</h1>
+            <h2 class="intro-subtitulo">Desenvolvedor de Sistemas</h2>
 
-            <p class="intro-subtitulo">FastAPI, Django, automacoes Python e arquitetura focada em performance.</p>
+            <p class="intro-frase">
+                Transformando lógica em soluções digitais reais.
+            </p>
 
-            <div class="intro-acoes">
-                <button class="intro-botao" id="intro-scroll-btn" type="button">Ver Projetos</button>
-                <a class="intro-botao intro-botao-secundario" href="#contato">Falar Comigo</a>
-            </div>
-
-            <div class="intro-metricas" aria-label="Destaques tecnicos">
-                <span>FastAPI + Django</span>
-                <span>Projetos reais</span>
-                <span>Arquitetura e performance</span>
-            </div>
+            <button class="intro-botao" id="intro-scroll-btn" type="button">Enter the System</button>
         </div>
 
         <div class="foto-wrapper">
@@ -115,38 +110,38 @@
     <!-- Linguagens -->
     <div class="skills-categoria">
         <h3>Linguagens</h3>
-        <ul class="skills-grid" role="list">
-            <li class="skill-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></li>
-            <li class="skill-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></li>
-            <li class="skill-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></li>
-            <li class="skill-item"><i class="devicon-python-plain colored"></i><span>Python</span></li>
-            <li class="skill-item"><i class="devicon-java-plain colored"></i><span>Java</span></li>
-        </ul>
+        <div class="skills-grid">
+            <div class="skill-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+            <div class="skill-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+            <div class="skill-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+            <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+            <div class="skill-item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+        </div>
     </div>
 
     <!-- Bibliotecas -->
     <div class="skills-categoria">
         <h3>Bibliotecas & Frameworks</h3>
-        <ul class="skills-grid" role="list">
-            <li class="skill-item"><i class="devicon-python-plain colored"></i><span>Pandas</span></li>
-            <li class="skill-item"><i class="devicon-matplotlib-plain"></i><span>Matplotlib</span></li>
-            <li class="skill-item"><i class="devicon-python-plain colored"></i><span>Pygame</span></li>
-            <li class="skill-item"><i class="devicon-qt-original colored"></i><span>PyQt</span></li>
-            <li class="skill-item"><i class="devicon-django-plain colored"></i><span>Django</span></li>
-            <li class="skill-item"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></li>
-            <li class="skill-item"><i class="devicon-sqlalchemy-plain colored"></i><span>SQLAlchemy</span></li>
-            <li class="skill-item"><i class="devicon-pytest-plain colored"></i><span>Pytest</span></li>
-        </ul>
+        <div class="skills-grid">
+            <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Pandas</span></div>
+            <div class="skill-item"><i class="devicon-matplotlib-plain"></i><span>Matplotlib</span></div>
+            <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Pygame</span></div>
+            <div class="skill-item"><i class="devicon-qt-original colored"></i><span>PyQt</span></div>
+            <div class="skill-item"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+            <div class="skill-item"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+            <div class="skill-item"><i class="devicon-sqlalchemy-plain colored"></i><span>SQLAlchemy</span></div>
+            <div class="skill-item"><i class="devicon-pytest-plain colored"></i><span>Pytest</span></div>
+        </div>
     </div>
 
     <!-- Banco de Dados -->
     <div class="skills-categoria">
         <h3>Bancos de Dados</h3>
-        <ul class="skills-grid" role="list">
-            <li class="skill-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></li>
-            <li class="skill-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></li>
-            <li class="skill-item"><i class="devicon-sqlite-plain colored"></i><span>SQLite</span></li>
-        </ul>
+        <div class="skills-grid">
+            <div class="skill-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+            <div class="skill-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+            <div class="skill-item"><i class="devicon-sqlite-plain colored"></i><span>SQLite</span></div>
+        </div>
     </div>
 </div>
 </section>

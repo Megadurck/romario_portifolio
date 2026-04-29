@@ -51,16 +51,16 @@ document.addEventListener("click", (event) => {
 
 if (introScrollBtn) {
     introScrollBtn.addEventListener("click", () => {
-        scrollToProjetos();
+        scrollToSobre();
     });
 }
 
-function scrollToProjetos() {
-    const secaoProjetos = document.getElementById("projetos");
-    if (!secaoProjetos) {
+function scrollToSobre() {
+    const secaoSobre = document.getElementById("sobre");
+    if (!secaoSobre) {
         return;
     }
 
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    secaoProjetos.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth" });
+    secaoSobre.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth" });
 }

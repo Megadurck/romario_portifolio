@@ -11,4 +11,15 @@
     /* Botão */
     --cor-botao-fundo: #00ffd5;
     --cor-botao-texto: #000000;
+
+    /* Tokens visuais */
+    --raio-card: 12px;
+    --raio-botao: 8px;
+    --sombra-card: 0 8px 24px rgba(0, 0, 0, 0.25);
+    --sombra-card-hover: 0 12px 34px rgba(0, 255, 200, 0.18);
+
+    --fonte-principal: "Space Grotesk", "Segoe UI", sans-serif;
+    --fonte-titulo: "Sora", "Segoe UI", sans-serif;
+    --cor-superficie: rgba(255, 255, 255, 0.04);
+    --cor-borda-suave: rgba(255, 255, 255, 0.1);
 }
