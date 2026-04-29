@@ -316,7 +316,7 @@ main {
 .sobre-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: clamp(1.5rem, 4vw, 3rem);
+    gap: clamp(1rem, 4vw, 3rem);
     align-items: center;
 }
 
@@ -422,7 +422,8 @@ main {
 .projetos {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: clamp(1rem, 2.8vh, 2rem);
 }
 
 .titulo-secao {
@@ -760,11 +761,11 @@ main {
     }
 
     .projetos-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+           grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
     .projeto-destaque {
-        grid-column: span 2;
+            grid-column: span 3;
     }
 }
 
