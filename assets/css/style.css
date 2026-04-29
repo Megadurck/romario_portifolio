@@ -12,6 +12,22 @@ html, body {
     overflow-x: hidden;
 }
 
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 4000;
+    padding: 10px 14px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0 0 6px 0;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
 /* ===== INTRO OCUPA A TELA INTEIRA ===== */
 #intro {
     min-height: 100vh;
@@ -221,11 +237,19 @@ html, body {
     display: none;
     font-size: 1.8rem;
     color: var(--cor-destaque);
+    background: transparent;
+    border: none;
     cursor: pointer;
     line-height: 1;
     z-index: 1001;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--cor-destaque);
+    outline-offset: 3px;
 }
 
 /* ===== RESPONSIVIDADE ===== */
@@ -380,6 +404,14 @@ body::after {
 .contato {
     display: flex;
     flex-direction: column;
+}
+
+.sobre,
+.skills,
+.projetos,
+.contato {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 900px;
 }
 
 /* ===== SEÇÃO SOBRE MIM ===== */
@@ -766,7 +798,10 @@ body::after {
     top: 25px;
     right: 40px;
     font-size: 40px;
+    line-height: 1;
     color: #fff;
+    background: transparent;
+    border: none;
     cursor: pointer;
 }
 
