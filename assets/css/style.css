@@ -12,23 +12,18 @@ html, body {
     overflow-x: hidden;
 }
 
-/* ===== INTRO: ESPAÇO PARA O MENU FIXO ===== */
-#intro {
-    padding-top: 70px;
-}
-
 /* ===== INTRO OCUPA A TELA INTEIRA ===== */
 #intro {
-    height: 100vh;
-    height: 100svh;
-    height: 100dvh; /* 100% da altura da tela */
+    min-height: 100vh;
+    min-height: 100svh;
+    min-height: 100dvh; /* usa viewport dinâmica sem prender corte */
 
 
     display: flex;
     justify-content: center; /* centraliza horizontal */
     align-items: center;     /* centraliza vertical */
     text-align: center;
-    padding: 20px;
+    padding: 90px 20px 20px; /* compensa menu fixo */
 }
 
 /* ===== CONTAINER INTERNO ===== */
@@ -537,7 +532,7 @@ body::after {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;    /* centraliza verticalmente */
+    justify-content: flex-start;
     padding: 60px 20px;
 }
 
@@ -652,6 +647,10 @@ body::after {
 }
 
 .projeto-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
     margin-top: auto; /* EMPURRA o botão para o fundo do card */
 }
 
@@ -939,6 +938,44 @@ body::after {
 }
 
 /* ===== RESPONSIVIDADE PROJETOS ===== */
+@media (max-width: 1200px) {
+    #intro {
+        min-height: unset;
+        height: auto;
+        align-items: flex-start;
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+
+    .projetos {
+        min-height: unset;
+        height: auto;
+        justify-content: flex-start;
+        padding: 100px 24px 70px;
+    }
+
+    .projetos-grid {
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+    }
+}
+
+@media (max-height: 700px) {
+    #intro {
+        min-height: unset;
+        height: auto;
+        align-items: flex-start;
+        padding-top: 90px;
+        padding-bottom: 24px;
+    }
+
+    .projetos {
+        min-height: unset;
+        height: auto;
+        justify-content: flex-start;
+        padding-top: 90px;
+    }
+}
+
 @media (max-width: 900px) {
     .projetos {
         padding: 100px 6%;
@@ -970,6 +1007,11 @@ body::after {
     .btn-print {
         width: 100%;
         text-align: center;
+    }
+
+    .projeto-links {
+        flex-direction: column;
+        align-items: stretch;
     }
 }
 
