@@ -1,26 +1,69 @@
+/* ===== Tema claro (padrão) ===== */
 :root {
     /* Cores principais */
-    --cor-fundo: #f4f1e9;
-    --cor-fundo-secundario: #e6ede3;
-    --cor-texto-principal: #16231d;
-    --cor-texto-secundario: #526057;
+    --cor-fundo: #eef1f5;
+    --cor-fundo-secundario: #e4e8ee;
+    --cor-fundo-projetos: #f7f8fa;
+    --cor-texto-principal: #1b1f27;
+    --cor-texto-secundario: #5b6472;
 
-    /* Cor de destaque (rock/tech vibe) */
-    --cor-destaque: #0b6b52;
-    --cor-sinal: #df6b4b;
+    /* Cor de destaque (tech vibe) */
+    --cor-destaque: #2f6fed;
+    --cor-sinal: #0ea5e9;
 
     /* Botão */
-    --cor-botao-fundo: #0b6b52;
+    --cor-botao-fundo: #2f6fed;
     --cor-botao-texto: #ffffff;
+
+    /* Superfícies */
+    --cor-card-bg: #ffffff;
+    --cor-superficie: rgba(255, 255, 255, 0.72);
+    --cor-borda-suave: rgba(27, 31, 39, 0.14);
+    --cor-borda-destaque: rgba(47, 111, 237, 0.24);
+    --cor-destaque-fraco: rgba(47, 111, 237, 0.08);
+    --cor-menu-fundo: rgba(238, 241, 245, 0.88);
+    --cor-modal-fundo: rgba(20, 24, 32, 0.82);
+    --cor-badge-texto: #ffffff;
+    --cor-fundo-translucido: rgba(238, 241, 245, 0.72);
+    --focus-ring: 0 0 0 0.1875rem rgba(47, 111, 237, 0.35);
 
     /* Tokens visuais */
     --raio-card: 8px;
     --raio-botao: 4px;
-    --sombra-card: 0 14px 32px rgba(22, 35, 29, 0.08);
-    --sombra-card-hover: 0 20px 42px rgba(22, 35, 29, 0.14);
+    --sombra-card: 0 14px 32px rgba(27, 31, 39, 0.08);
+    --sombra-card-hover: 0 20px 42px rgba(47, 111, 237, 0.16);
+    --sombra-botao-hover: 0 10px 24px rgba(47, 111, 237, 0.24);
 
     --fonte-principal: "Space Grotesk", "Segoe UI", sans-serif;
     --fonte-titulo: "Sora", "Segoe UI", sans-serif;
-    --cor-superficie: rgba(255, 255, 255, 0.7);
-    --cor-borda-suave: rgba(22, 35, 29, 0.14);
+}
+
+/* ===== Tema escuro ===== */
+[data-theme="dark"] {
+    --cor-fundo: #0a0f1f;
+    --cor-fundo-secundario: #0d1328;
+    --cor-fundo-projetos: #0a0d1a;
+    --cor-texto-principal: #eef2f8;
+    --cor-texto-secundario: #9aa5b8;
+
+    --cor-destaque: #00ffd5;
+    --cor-sinal: #35ffd2;
+
+    --cor-botao-fundo: linear-gradient(135deg, #00ffd5 0%, #35ffd2 100%);
+    --cor-botao-texto: #001611;
+
+    --cor-card-bg: rgba(255, 255, 255, 0.04);
+    --cor-superficie: rgba(255, 255, 255, 0.07);
+    --cor-borda-suave: rgba(255, 255, 255, 0.14);
+    --cor-borda-destaque: rgba(0, 255, 213, 0.26);
+    --cor-destaque-fraco: rgba(0, 255, 213, 0.08);
+    --cor-menu-fundo: rgba(10, 15, 31, 0.84);
+    --cor-modal-fundo: rgba(0, 0, 0, 0.82);
+    --cor-badge-texto: #001611;
+    --cor-fundo-translucido: rgba(10, 15, 31, 0.72);
+    --focus-ring: 0 0 0 0.1875rem rgba(0, 255, 213, 0.35);
+
+    --sombra-card: 0 14px 32px rgba(0, 0, 0, 0.35);
+    --sombra-card-hover: 0 20px 42px rgba(0, 255, 213, 0.16);
+    --sombra-botao-hover: 0 10px 24px rgba(0, 255, 213, 0.28);
 }

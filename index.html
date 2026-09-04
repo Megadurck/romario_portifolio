@@ -8,15 +8,26 @@
     <meta name="keywords" content="Python, FastAPI, Django, PyQt, SQLAlchemy, API REST, Backend, Portfólio, Desenvolvedor, Web, Desktop, Programação">
     <title>Romário | Desenvolvedor Python & Web</title>
 
+    <script>
+        (function () {
+            var salvo = localStorage.getItem("tema");
+            var prefereEscuro = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            var tema = salvo || (prefereEscuro ? "dark" : "light");
+            if (tema === "dark") {
+                document.documentElement.setAttribute("data-theme", "dark");
+            }
+        })();
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/variables.css?v=5">
-    <link rel="stylesheet" href="assets/css/style.css?v=5">
-    <link rel="stylesheet" href="assets/css/animations.css?v=5">
+    <link rel="stylesheet" href="assets/css/variables.css?v=6">
+    <link rel="stylesheet" href="assets/css/style.css?v=6">
+    <link rel="stylesheet" href="assets/css/animations.css?v=6">
 
     <link rel="icon" type="image/png" href="assets/img/icons/developer.png">
 
@@ -36,6 +47,11 @@
         <a class="menu-logo" href="#intro">ROMÁRIO</a>
 
         <span class="menu-status" aria-hidden="true">Backend / Web / Automação</span>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema claro/escuro">
+            <span class="icone-sol" aria-hidden="true">☀️</span>
+            <span class="icone-lua" aria-hidden="true">🌙</span>
+        </button>
 
         <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menu-links" aria-expanded="false">☰</button>
 
