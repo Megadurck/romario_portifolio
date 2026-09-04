@@ -1,3 +1,6 @@
 # Lixo de sistema
 .DS_Store
 Thumbs.db
+
+# Saída gerada pela ferramenta graphify (não faz parte do projeto)
+graphify-out/
