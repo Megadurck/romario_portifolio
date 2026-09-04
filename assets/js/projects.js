@@ -1,5 +1,6 @@
 const modal = document.getElementById("modal-print");
 const modalImg = document.getElementById("img-modal");
+const modalCaption = document.getElementById("modal-legenda");
 const fecharModal = document.querySelector(".fechar-modal");
 const filterButtons = document.querySelectorAll(".filtro-btn");
 const projectCards = document.querySelectorAll(".projeto-card");
@@ -13,6 +14,9 @@ function closeModal() {
     modal.style.display = "none";
     modal.setAttribute("aria-hidden", "true");
     modalImg.removeAttribute("src");
+    if (modalCaption) {
+        modalCaption.textContent = "";
+    }
     document.body.style.overflow = "";
 
     if (lastTriggerButton) {
@@ -29,6 +33,7 @@ function openModal(btn) {
 
     const card = btn.closest(".projeto-card");
     const title = card ? card.querySelector("h3") : null;
+    const type = card ? card.querySelector(".projeto-tipo") : null;
     const altText = title ? `Preview do projeto ${title.textContent.trim()}` : "Preview do projeto";
 
     lastTriggerButton = btn;
@@ -36,6 +41,10 @@ function openModal(btn) {
     modal.setAttribute("aria-hidden", "false");
     modalImg.src = imgSrc;
     modalImg.alt = altText;
+    if (modalCaption) {
+        const projectType = type ? `${type.textContent.trim()} / ` : "";
+        modalCaption.textContent = `${projectType}${title ? title.textContent.trim() : "Projeto"}`;
+    }
     document.body.style.overflow = "hidden";
 
     if (fecharModal) {

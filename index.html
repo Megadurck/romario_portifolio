@@ -35,6 +35,8 @@
     <div class="menu-container">
         <a class="menu-logo" href="#intro">ROMÁRIO</a>
 
+        <span class="menu-status" aria-hidden="true">Backend / Web / Automação</span>
+
         <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menu-links" aria-expanded="false">☰</button>
 
         <nav class="menu-links" id="menu-links" aria-label="Menu principal">
@@ -54,11 +56,11 @@
     <div class="intro-container">
 
         <div class="intro-texto">
-            <p class="intro-label">Romario | Backend Developer</p>
+            <p class="intro-label">Romário Durck <span aria-hidden="true">/</span> Backend Developer</p>
 
-            <h1 class="intro-titulo">Construo APIs robustas e sistemas backend prontos para produção.</h1>
+            <h1 class="intro-titulo">Sistemas que fazem a lógica parecer simples.</h1>
 
-            <p class="intro-subtitulo">FastAPI, Django, automacoes Python e arquitetura focada em performance.</p>
+            <p class="intro-subtitulo">FastAPI, Django e automações Python para transformar regras de negócio em produtos confiáveis.</p>
 
             <div class="intro-acoes">
                 <button class="intro-botao" id="intro-scroll-btn" type="button">Ver Projetos</button>
@@ -73,7 +75,8 @@
         </div>
 
         <div class="foto-wrapper">
-            <img src="assets/img/foto-perfil.png" alt="Setup de desenvolvimento" class="intro-foto" fetchpriority="high" decoding="async">
+            <img src="assets/img/profile/foto-profile.jpeg" alt="Foto de Romário Durck" class="intro-foto" fetchpriority="high" decoding="async">
+            <p class="foto-legenda">Desenvolvimento orientado a produto</p>
         </div>
 
     </div>
@@ -84,7 +87,7 @@
     <div class="sobre-container">
 
         <div class="sobre-foto-area">
-            <img src="assets/img/profile/foto-profile.jpeg" alt="Foto de Romário" class="sobre-foto" loading="lazy" decoding="async">
+            <img src="assets/img/foto-perfil.png" alt="Setup de desenvolvimento" class="sobre-foto" loading="lazy" decoding="async">
         </div>
 
         <div class="sobre-texto">
@@ -168,6 +171,9 @@
         <div class="projeto-card projeto-destaque" data-categories="python fastapi api">
             <span class="projeto-tipo">Backend API</span>
             <span class="destaque-badge">Projeto Mais Recente</span>
+            <button class="projeto-capa btn-print" type="button" data-img="assets/img/projects/smart-schedule.png" aria-label="Ampliar preview do projeto Smart Schedule API">
+                <img src="assets/img/projects/smart-schedule.png" alt="Preview da documentação da Smart Schedule API" loading="lazy" decoding="async">
+            </button>
             <h3>Smart Schedule API</h3>
             <p>API REST para gestão de agendamentos com autenticação, controle de horários e organização por empresa.</p>
             <div class="projeto-tech">
@@ -179,9 +185,6 @@
             </div>
 
             <div class="projeto-links">
-                <button class="btn-print" data-img="assets/img/projects/smart-schedule.png">
-                    Ver Print
-                </button>
                 <a href="https://github.com/Megadurck/smart-schedule-api" target="_blank" rel="noopener noreferrer" class="btn-projeto">
                     Repositório
                 </a>
@@ -191,6 +194,9 @@
         <!-- Transcrição de Áudio -->
         <div class="projeto-card" data-categories="python automacao">
             <span class="projeto-tipo">Automacao</span>
+            <button class="projeto-capa btn-print" type="button" data-img="assets/img/projects/transcrever.png" aria-label="Ampliar preview do projeto Transcrição de Áudio com Python">
+                <img src="assets/img/projects/transcrever.png" alt="Preview do projeto de transcrição de áudio" loading="lazy" decoding="async">
+            </button>
             <h3>Transcrição de Áudio com Python</h3>
             <p>Sistema para transcrição automática de áudios usando a API de reconhecimento de voz do Google.</p>
             <div class="projeto-tech">
@@ -200,9 +206,6 @@
                 <span>Automação</span>
             </div>
             <div class="projeto-links">
-                <button class="btn-print" data-img="assets/img/projects/transcrever.png">
-                    Ver Print
-                </button>
                 <a href="https://github.com/Megadurck/Transcricao-Audio-Python" target="_blank" rel="noopener noreferrer" class="btn-projeto">
                     Repositório
                 </a>
@@ -212,6 +215,9 @@
         <!-- Jogo Espaçonave -->
         <div class="projeto-card" data-categories="python game">
             <span class="projeto-tipo">Game Dev</span>
+            <button class="projeto-capa btn-print" type="button" data-img="assets/img/projects/jogo-espaconave.png" aria-label="Ampliar preview do projeto Jogo de Espaçonave">
+                <img src="assets/img/projects/jogo-espaconave.png" alt="Preview do jogo de espaçonave" loading="lazy" decoding="async">
+            </button>
             <h3>Jogo de Espaçonave (Pygame)</h3>
             <p>Jogo 2D feito com Pygame focado em lógica de programação e estrutura de jogo.</p>
             <div class="projeto-tech">
@@ -222,9 +228,6 @@
             </div>
 
             <div class="projeto-links">
-                <button class="btn-print" data-img="assets/img/projects/jogo-espaconave.png">
-                    Ver Print
-                </button>
                 <a href="https://github.com/Megadurck/jogo-espaconave-pygame" target="_blank" rel="noopener noreferrer" class="btn-projeto">
                     Repositório
                 </a>
@@ -234,6 +237,10 @@
         <div class="projeto-card" data-categories="python desktop">
 
             <span class="projeto-tipo">Desktop</span>
+
+            <button class="projeto-capa btn-print" type="button" data-img="assets/img/projects/recibo-generation.png" aria-label="Ampliar preview do projeto Recibo Generator">
+                <img src="assets/img/projects/recibo-generation.png" alt="Preview do aplicativo Recibo Generator" loading="lazy" decoding="async">
+            </button>
 
             <h3>Recibo Generator</h3>
 
@@ -250,9 +257,6 @@
             </div>
 
             <div class="projeto-links">
-                <button class="btn-print" data-img="assets/img/projects/recibo-generation.png">
-                    Ver Print
-                </button>
                 <a href="https://github.com/Megadurck/pyqt-receipt-generator" target="_blank" rel="noopener noreferrer" class="btn-projeto">
                     Repositório
                 </a>
@@ -264,6 +268,9 @@
         <!-- Escola de Arte -->
         <div class="projeto-card" data-categories="python django web">
             <span class="projeto-tipo">Fullstack Web</span>
+            <button class="projeto-capa btn-print" type="button" data-img="assets/img/projects/escola-arte.png" aria-label="Ampliar preview do projeto Escola Arte">
+                <img src="assets/img/projects/escola-arte.png" alt="Preview do sistema Escola Arte" loading="lazy" decoding="async">
+            </button>
             <h3>Escola_Arte (Django)</h3>
 
             <p>
@@ -284,9 +291,6 @@
             </p>
 
             <div class="projeto-links">
-                <button class="btn-print" data-img="assets/img/projects/escola-arte.png">
-                    Ver Print
-                </button>
                 <a href="https://github.com/Megadurck/escola_arte" target="_blank" rel="noopener noreferrer" class="btn-projeto">
                     Repositório
                 </a>
@@ -297,6 +301,9 @@
         <!-- Controle Financeiro -->
         <div class="projeto-card" data-categories="python desktop">
             <span class="projeto-tipo">Desktop</span>
+            <button class="projeto-capa btn-print" type="button" data-img="assets/img/projects/controle-financeiro.png" aria-label="Ampliar preview do projeto Controle Financeiro Desktop">
+                <img src="assets/img/projects/controle-financeiro.png" alt="Preview do aplicativo Controle Financeiro Desktop" loading="lazy" decoding="async">
+            </button>
             <h3>Controle Financeiro Desktop</h3>
             <p>Aplicação para controle de ganhos e gastos com gráficos e persistência em arquivo JSON.</p>
             <div class="projeto-tech">
@@ -308,9 +315,6 @@
             </div>
 
             <div class="projeto-links">
-                <button class="btn-print" data-img="assets/img/projects/controle-financeiro.png">
-                    Ver Print
-                </button>
                 <a href="https://github.com/Megadurck/controle-financeiro" target="_blank" rel="noopener noreferrer" class="btn-projeto">
                     Repositório
                 </a>
@@ -349,6 +353,7 @@
 <div id="modal-print" class="modal-print" role="dialog" aria-modal="true" aria-label="Visualização de imagem do projeto" aria-hidden="true">
     <button class="fechar-modal" type="button" aria-label="Fechar visualização">&times;</button>
     <img class="modal-conteudo" id="img-modal" alt="Preview do projeto">
+    <p class="modal-legenda" id="modal-legenda"></p>
 </div>
 
 <!-- JS -->

@@ -2,7 +2,7 @@
 
 Este é meu portfólio pessoal de desenvolvedor, criado para apresentar meus projetos, habilidades técnicas e formas de contato de maneira direta e profissional.
 
-O foco do projeto é um layout moderno, responsivo e com boa performance, destacando principalmente projetos práticos, reais e organizados por stack.
+O foco do projeto é uma experiência editorial e técnica, responsiva e com boa performance, destacando projetos práticos, reais e organizados por stack.
 
 ---
 
@@ -17,6 +17,19 @@ O foco do projeto é um layout moderno, responsivo e com boa performance, destac
 * **HTML5** — Estrutura do site
 * **CSS3** — Estilização e responsividade
 * **JavaScript** — Interações e funcionalidades (modais, efeitos visuais e dinâmica dos projetos)
+
+---
+
+## ✨ Design e Experiência
+
+O portfólio recebeu uma atualização visual com foco em leitura, contexto e apresentação dos projetos:
+
+* Identidade editorial clara, com grade de fundo sutil e contraste em verde profundo e coral
+* Hero com retrato em composição vertical e chamadas para projetos e contato
+* Navegação fixa que destaca automaticamente a seção em leitura
+* Layout responsivo pensado para desktop, tablet e mobile
+* Projetos organizados em uma grade visual, com o projeto mais recente em destaque
+* Cards com previews reais dos sistemas desenvolvidos, em vez de apenas blocos de texto
 
 ---
 
@@ -61,10 +74,15 @@ Cada projeto possui:
 ✔ Contexto rápido do tipo de projeto
 ✔ Tecnologias utilizadas
 ✔ Link para o repositório
-✔ Preview visual (quando disponível)
+✔ Preview visual clicável
 
-Além disso, a seção de projetos agora permite filtro rápido por stack para facilitar a navegação.
-O projeto mais recente também aparece com destaque visual para leitura mais rápida.
+### Funcionalidades da galeria
+
+* Filtro rápido por stack para facilitar a descoberta dos projetos
+* Projeto mais recente em destaque visual para leitura mais rápida
+* Modal de preview com imagem ampliada, título e categoria do projeto
+* Fechamento do modal pelo botão, clique fora da imagem ou tecla `Esc`
+* Retorno do foco ao botão que abriu o preview, melhorando a navegação por teclado
 
 ---
 
@@ -86,6 +104,9 @@ O portfólio foi otimizado para carregamento rápido, boas práticas de acessibi
 * Scripts com carregamento adiado (defer)
 * Imagens otimizadas com lazy loading onde faz sentido
 * Menos requests desnecessários no head
+* Link para pular diretamente ao conteúdo principal
+* Estados de foco visíveis para navegação por teclado
+* Respeito à preferência do usuário por reduzir animações
 
 ---
 
